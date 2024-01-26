@@ -3,7 +3,7 @@ agent { label "projecta" }
         stages {
         stage('1st Step - git clone ') {
             steps {
-               sh 'yum install git -y'
+               
                git 'https://github.com/Anuradha204/Helloworld-latest3.git'
             }
         }
@@ -15,10 +15,12 @@ agent { label "projecta" }
         }
         stage('3rd Step-deploy ') {
             steps {
+git 'https://github.com/Anuradha204/Helloworld-latest3.git'
                  }
         }
         stage('4rd Step-deploy ') {
             steps {
+git 'https://github.com/Anuradha204/Helloworld-latest3.git'
                 }
         } 
     }
