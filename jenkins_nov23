@@ -15,13 +15,11 @@ agent { label "projecta" }
         }
         stage('3rd Step-deploy ') {
             steps {
-               deploy adapters: [tomcat8(credentialsId: 'admin', path: '', url: 'http://44.204.78.94:8080/')], contextPath: null, war: '**/*.war'
-            }
+                 }
         }
         stage('4rd Step-deploy ') {
             steps {
-               deploy adapters: [tomcat8(credentialsId: 'admin', path: '', url: 'http://44.204.78.94:8080/')], contextPath: null, war: '**/*.war'
-            }
+                }
         } 
     }
 }
